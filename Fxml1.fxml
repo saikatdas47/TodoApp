@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="720.0" style="-fx-background-color: #990000;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="todo.Fxml1Controller">
+    <stylesheets>
+        <URL value="@fxml1.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="-12.0" prefHeight="68.0" prefWidth="742.0" style="-fx-background-color: #990000;">
+         <children>
+            <MenuButton fx:id="file" layoutX="22.0" layoutY="18.0" mnemonicParsing="false" onAction="#fileevent" style="-fx-background-color: #990000;" text="File" textAlignment="CENTER" textFill="WHITE">
+               <items>
+                  <MenuItem fx:id="home" mnemonicParsing="false" onAction="#homeevent" text="Home" />
+                  <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#exitevent" text="Exit" />
+               </items>
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </MenuButton>
+         </children>
+      </Pane>
+      <AnchorPane layoutY="66.0" prefHeight="426.0" prefWidth="225.0" style="-fx-background-color: #C0C0C0;">
+         <children>
+            <Button fx:id="addnewtask" layoutX="16.0" layoutY="224.0" mnemonicParsing="false" onAction="#addnewtaskevent" prefHeight="33.0" prefWidth="193.0" style="-fx-background-color: #990000;" text="Add  newTask" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="todaystask" layoutX="16.0" layoutY="285.0" mnemonicParsing="false" onAction="#todaystaskevent" prefHeight="33.0" prefWidth="193.0" style="-fx-background-color: #990000;" text="Todays Task" textFill="WHITE" />
+            <Button fx:id="alltask" layoutX="16.0" layoutY="349.0" mnemonicParsing="false" onAction="#alltaskevent" prefHeight="33.0" prefWidth="193.0" style="-fx-background-color: #990000;" text="All Tasks" textFill="WHITE" />
+            <ImageView fx:id="img" fitHeight="162.0" fitWidth="184.0" layoutX="21.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@rawImage-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="228.0" layoutY="66.0" prefHeight="426.0" prefWidth="502.0" style="-fx-background-color: #C0C0C0;">
+         <children>
+            <Button fx:id="lebel3" layoutX="14.0" layoutY="149.0" mnemonicParsing="false" onAction="#btn3" prefHeight="57.0" prefWidth="475.0" style="-fx-background-color: #95B9C7;" />
+            <Button fx:id="lebel2" layoutX="13.0" layoutY="83.0" mnemonicParsing="false" onAction="#btn2" prefHeight="57.0" prefWidth="475.0" style="-fx-background-color: #95B9C7;" />
+            <Button fx:id="lebel1" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#btn1" prefHeight="57.0" prefWidth="475.0" style="-fx-background-color: #95B9C7;" />
+            <Button fx:id="lebel4" layoutX="14.0" layoutY="213.0" mnemonicParsing="false" onAction="#btn4" prefHeight="57.0" prefWidth="475.0" style="-fx-background-color: #95B9C7;" />
+            <Button fx:id="lebel6" layoutX="13.0" layoutY="345.0" mnemonicParsing="false" onAction="#btn6" prefHeight="57.0" prefWidth="475.0" style="-fx-background-color: #95B9C7;" />
+            <Button fx:id="lebel5" layoutX="14.0" layoutY="278.0" mnemonicParsing="false" onAction="#btn5" prefHeight="57.0" prefWidth="475.0" style="-fx-background-color: #95B9C7;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

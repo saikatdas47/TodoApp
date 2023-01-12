@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="720.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="todo.Fxml2Controller">
+    <stylesheets>
+        <URL value="@fxml2.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="480.0" prefWidth="720.0" style="-fx-background-color: #C0C0C0;">
+         <children>
+            <Pane layoutY="-1.0" prefHeight="69.0" prefWidth="732.0" style="-fx-background-color: #990000;">
+               <children>
+                  <Button fx:id="home" layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onAction="#homeevent" prefHeight="38.0" prefWidth="86.0" style="-fx-background-color: #990000;" text="Home" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Button fx:id="save" layoutX="544.0" layoutY="407.0" mnemonicParsing="false" onAction="#saveevent" prefHeight="27.0" prefWidth="64.0" style="-fx-background-color: #990000;" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font></Button>
+            <Label fx:id="msg" layoutX="32.0" layoutY="445.0" prefHeight="17.0" prefWidth="359.0" />
+            <TextField fx:id="details" layoutX="161.0" layoutY="193.0" prefHeight="110.0" prefWidth="447.0" />
+            <DatePicker fx:id="deadline" layoutX="162.0" layoutY="337.0" opacity="0.78" prefHeight="44.0" prefWidth="447.0" style="-fx-background-color: #3152A3;" />
+            <TextField fx:id="task" layoutX="162.0" layoutY="145.0" onAction="#taskevent" prefHeight="38.0" prefWidth="447.0" />
+            <ImageView fitHeight="139.0" fitWidth="120.0" layoutX="609.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@4697260.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="59.0" layoutY="151.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="64.0" style="-fx-background-color: #990000;" text="Task" textFill="WHITE" />
+            <Button layoutX="59.0" layoutY="227.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="64.0" style="-fx-background-color: #990000;" text="Details" textFill="WHITE" />
+            <Button layoutX="62.0" layoutY="344.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="64.0" style="-fx-background-color: #990000;" text="Date" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

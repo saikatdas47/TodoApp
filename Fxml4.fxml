@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="720.0" style="-fx-background-color: #ffb3b3;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="todo.Fxml4Controller">
+    <stylesheets>
+        <URL value="@fxml4.css" />
+    </stylesheets>
+   <children>
+      <Label fx:id="lebel1" layoutX="14.0" layoutY="15.0" prefHeight="57.0" prefWidth="347.0" style="-fx-background-color: #95B9C7;" />
+      <Label fx:id="lebel2" layoutX="14.0" layoutY="82.0" prefHeight="57.0" prefWidth="347.0" style="-fx-background-color: #95B9C7;" />
+      <Label fx:id="lebel3" layoutX="14.0" layoutY="148.0" prefHeight="57.0" prefWidth="347.0" style="-fx-background-color: #95B9C7;" />
+      <Label fx:id="lebel4" layoutX="14.0" layoutY="214.0" prefHeight="57.0" prefWidth="347.0" style="-fx-background-color: #95B9C7;" />
+      <Label fx:id="lebel5" layoutX="14.0" layoutY="278.0" prefHeight="57.0" prefWidth="347.0" style="-fx-background-color: #95B9C7;" />
+      <Label fx:id="lebel6" layoutX="14.0" layoutY="344.0" prefHeight="57.0" prefWidth="347.0" style="-fx-background-color: #95B9C7;" />
+      <Label fx:id="lebel7" layoutX="368.0" layoutY="15.0" prefHeight="57.0" prefWidth="338.0" style="-fx-background-color: #95B9C7;" />
+      <Label fx:id="lebel8" layoutX="368.0" layoutY="82.0" prefHeight="57.0" prefWidth="338.0" style="-fx-background-color: #95B9C7;" />
+      <Label fx:id="lebel9" layoutX="368.0" layoutY="148.0" prefHeight="57.0" prefWidth="338.0" style="-fx-background-color: #95B9C7;" />
+      <Label fx:id="lebel12" layoutX="368.0" layoutY="344.0" prefHeight="57.0" prefWidth="338.0" style="-fx-background-color: #95B9C7;" />
+      <Label fx:id="lebel11" layoutX="368.0" layoutY="278.0" prefHeight="57.0" prefWidth="338.0" style="-fx-background-color: #95B9C7;" />
+      <Label fx:id="lebel10" layoutX="368.0" layoutY="214.0" prefHeight="57.0" prefWidth="338.0" style="-fx-background-color: #95B9C7;" />
+      <Button fx:id="back" layoutX="324.0" layoutY="412.0" mnemonicParsing="false" onAction="#backevent" prefHeight="45.0" prefWidth="89.0" style="-fx-background-color: #A20A0A;" text="Back" textFill="WHITE" />
+   </children>
+</AnchorPane>
